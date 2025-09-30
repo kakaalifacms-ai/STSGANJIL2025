@@ -12,7 +12,7 @@ body {
   background: linear-gradient(to right, #00A4FF, #00c3ff);
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
 }
 
 .header h1 {
@@ -128,13 +128,7 @@ button:hover {
 /* Footer */
 .footer {
   font-size: 14px;
-}
 
-/* Responsive untuk HP */
-@media screen and (max-width: 480px) {
-  .container {
-    flex-direction: column;
-  }
 
   .sidebar {
     width: 100%;
