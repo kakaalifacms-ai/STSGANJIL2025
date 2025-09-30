@@ -137,12 +137,6 @@ button:hover {
 /* Footer */
 .footer {
   font-size: 14px;
-}
-
-@media (max-width: 600px) {
-  .sidebar {
-    width: 100%;
-  }
 
   .sidebar ul {
     display: flex;
