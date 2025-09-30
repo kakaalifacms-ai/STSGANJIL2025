@@ -29,7 +29,7 @@ body {
 /* Container utama */
 .container {
   display: flex;
-  flex: 1; /* mengisi ruang antara header dan footer */
+  flex: 1;
   min-height: 0;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .sidebar li {
-  margin: 0; /* hilangin jarak default */
+  margin: 0;
 }
 
 .sidebar a {
@@ -61,7 +61,7 @@ body {
   background: #435FFB;
   transition: 0.3s;
   text-align: center;
-  margin-bottom: 6px; /* kasih jarak kecil antar tombol */
+  margin-bottom: 6px;
 }
 
 .sidebar a:hover,
@@ -100,13 +100,22 @@ label {
   margin-bottom: 5px;
 }
 
+/* Input, Textarea, Select */
 input,
-textarea {
+textarea,
+select {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+select {
+  background: white;
+  cursor: pointer;
 }
 
 button {
@@ -115,7 +124,7 @@ button {
   background: #00A4FF;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
@@ -128,8 +137,9 @@ button:hover {
 /* Footer */
 .footer {
   font-size: 14px;
+}
 
-
+@media (max-width: 600px) {
   .sidebar {
     width: 100%;
   }
@@ -145,6 +155,6 @@ button:hover {
   }
 
   .sidebar a {
-    margin-bottom: 0; /* hapus jarak bawah kalau di HP biar rata */
+    margin-bottom: 0;
   }
 }
